@@ -8,6 +8,7 @@ app = Flask(__name__)
 def hello():
     return jsonify(message="Hello, World!")
 
+
 @app.route('/echo', methods=['POST'])
 def echo():
     data = request.get_json(force=True)
